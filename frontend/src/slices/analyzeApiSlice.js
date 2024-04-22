@@ -1,6 +1,6 @@
 import { apiSlice } from "./apiSlice";
 const SERVER1_BASE_URL = "http://localhost:8000";
-const SERVER2_BASE_URL = "http://localhost:3001";
+const SERVER2_BASE_URL = "http://localhost:8080";
 
 const UPLOAD_URL = "/api/upload";
 const SCRAPE_URL = "/api/scraper";
