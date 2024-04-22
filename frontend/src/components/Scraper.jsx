@@ -7,28 +7,29 @@ import { toast } from "react-toastify";
 
 const Scraper = () => {
   const [scrapeReview, { isLoading }] = useScrapeReviewMutation();
-  const [productLink, setProductLink] = useState("");
+  const [link, setLink] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await scrapeReview({ productLink }).unwrap();
-      const reviewText = response.reviews;
-      const reviewTime = response.dates;
-      setProductLink("");
+      const response = await scrapeReview({ link }).unwrap();
+      // const reviewText = response.reviews;
+      // const reviewTime = response.dates;
+      setLink("");
 
       // generate csv content
-      let csvContent = "reviewText,reviewTime\n";
-      for (let i = 0; i < reviewText.length; i++) {
-        csvContent += `"${reviewText[i]}","${reviewTime[i]}"\n`;
-      }
-      // convert csv content to blob
-      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
-      // save blob as a file
-      saveAs(blob, "product_reviews.csv");
-      toast.success("Data successfully collected")
+      // let csvContent = "reviewText,reviewTime\n";
+      // for (let i = 0; i < reviewText.length; i++) {
+      //   csvContent += `"${reviewText[i]}","${reviewTime[i]}"\n`;
+      // }
+      // // convert csv content to blob
+      // const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
+      // // save blob as a file
+      // saveAs(blob, "product_reviews.csv");
+      console.log(response);
+      toast.success("Data successfully collected");
     } catch (error) {
       console.error("Error:", error);
-      toast.error("Error has occured. Invalid link")
+      toast.error("Error has occured. Invalid link");
     }
   };
 
@@ -39,8 +40,8 @@ const Scraper = () => {
         <input
           type="text"
           placeholder="Enter product link"
-          value={productLink}
-          onChange={(e) => setProductLink(e.target.value)}
+          value={link}
+          onChange={(e) => setLink(e.target.value)}
           required
           className="sc-input"
         />
