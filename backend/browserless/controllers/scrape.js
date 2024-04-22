@@ -1,10 +1,11 @@
 const puppeteer = require("puppeteer");
-const fs = require("fs");
-const path = require("path");
 const { DateTime } = require("luxon");
 
 const scrape = async (req, res, next) => {
   let browser = null;
+  const TOKEN = process.env.TOKEN;
+  const BROWSERLESS_PORT = process.env.BROWSERLESS_PORT;
+  const browserWSEndpoint = `ws://127.0.0.1:${BROWSERLESS_PORT}?token=${TOKEN}`;
 
   try {
     const { link } = req.body;
@@ -13,7 +14,7 @@ const scrape = async (req, res, next) => {
       return res.status(400).json({ message: "Invalid link provided." });
     }
 
-    browser = await puppeteer.launch();
+    browser = await puppeteer.connect({browserWSEndpoint});
     const page = await browser.newPage();
 
     await page.setUserAgent(
