@@ -1,5 +1,10 @@
 # Opinix
 
+#### About Project
+The project Opinix is an extensive effort aimed at tackling the growing problems related to e-commerce. Currently, this is the era of e-commerce, and most people prefer purchasing products online. There are thousands of reviews on each product and to go through each review and analyze the sentiment of every customer is a complicated task. Through the use of machine learning, web scraping (Browserless), and sentiment analysis (Bi-LSTM), the Opinix web application analyzes user evaluations and presents the opinions of a customer in a visually pleasing way. 
+
+#### Project goal
+The goal of this project is to create a platform through which companies can easily analyze the sentiments of customers on their products and look out for room for improvement if there is any. Through the extraction of significant data from the huge world of consumer evaluations, Opinix hopes to transform decision-making processes across a range of application domains, including online shopping platforms, brand feedback, and customer service improvement.
 
 ## Table of Contents
 
@@ -14,12 +19,12 @@
 
 ## Technologies
 
-- Browserless
-- React
-- Redux Toolkit
-- Django
-- Bi-LSTM
-- Firebase
+- Browserless: Used for web scraping
+- React: Used for frontend development
+- Redux Toolkit: Used for state management
+- Django: Used for backend development
+- Bi-LSTM: Used for sentiment analysis
+- Firebase: Used for authentication and file storage
 
 
 ## Installation
