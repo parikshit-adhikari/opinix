@@ -8,7 +8,7 @@ app.use(express.json());
 
 require("dotenv").config();
 
-const port = 3001;
+const port = 8080;
 
 app.use("/api/scraper", scrape);
 
