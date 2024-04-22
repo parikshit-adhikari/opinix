@@ -12,19 +12,19 @@ const Scraper = () => {
     e.preventDefault();
     try {
       const response = await scrapeReview({ link }).unwrap();
-      // const reviewText = response.reviews;
-      // const reviewTime = response.dates;
+      const reviewText = response.reviews;
+      const reviewTime = response.dates;
       setLink("");
 
       // generate csv content
-      // let csvContent = "reviewText,reviewTime\n";
-      // for (let i = 0; i < reviewText.length; i++) {
-      //   csvContent += `"${reviewText[i]}","${reviewTime[i]}"\n`;
-      // }
-      // // convert csv content to blob
-      // const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
-      // // save blob as a file
-      // saveAs(blob, "product_reviews.csv");
+      let csvContent = "reviewText,reviewTime\n";
+      for (let i = 0; i < reviewText.length; i++) {
+        csvContent += `"${reviewText[i]}","${reviewTime[i]}"\n`;
+      }
+      // convert csv content to blob
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
+      // save blob as a file
+      saveAs(blob, "product_reviews.csv");
       console.log(response);
       toast.success("Data successfully collected");
     } catch (error) {
