@@ -11,6 +11,7 @@ The goal of this project is to create a platform through which companies can eas
 - [Demo](#demo)
 - [Technologies](#technologies)
 - [Installation](#installation)
+- [License](#license)
 
 
 ## Demo
@@ -114,5 +115,10 @@ then:
 ```bash
 npm start
 ```
+
+## License
+
+This project is licensed under the [MIT License](/LICENSE).
+
 
 
