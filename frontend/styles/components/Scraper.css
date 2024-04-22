@@ -1,0 +1,31 @@
+.sc-text{
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem
+}
+.sc-form{
+    width: 21rem;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-input {
+    width: 62%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+}
+.sc-button{
+    padding: 0.5rem;
+    background-color: rgb(91, 91, 223);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 900;
+    width: 32%;
+    cursor: pointer;
+}
+.sc-button:hover{
+    background-color: #2353ac;
+}
+.sc-loading{
+    margin: 0;
+}

@@ -1,0 +1,15 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+const App = () => {
+  return (
+    <>
+      <Navbar />
+      <ToastContainer style={{marginTop: "3rem"}}/>
+      <Outlet />
+    </>
+  );
+};
+
+export default App;

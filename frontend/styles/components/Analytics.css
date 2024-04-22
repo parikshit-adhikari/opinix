@@ -1,0 +1,128 @@
+.ap-hide-top {
+  display: none;
+}
+.ant-outer-div {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.ant-comments-div {
+  width: 38%;
+}
+.ant-rem-div {
+  width: 58%;
+}
+.kw-outer-div {
+  padding: 1rem ;
+  border-radius: 1rem;
+  margin: 3rem auto;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.3),
+    0 1rem 1.5rem -1px rgba(0, 0, 0, 0.18);
+}
+.kw-outer-div h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.kw-outer-div svg{
+  display: flex;
+  justify-content: center;
+}
+.sbt-outer-div {
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 50%;
+  height: fit-content;
+  margin: 3rem auto;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.3),
+    0 1rem 1.5rem -1px rgba(0, 0, 0, 0.18);
+}
+.sbt-outer-div h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.sot-outer-div {
+  padding: 1rem;
+  border-radius: 1rem;
+  /* width: 50%; */
+  height: fit-content;
+  margin: 3rem auto;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.3),
+    0 1rem 1.5rem -1px rgba(0, 0, 0, 0.18);
+}
+.sot-outer-div h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.pc-outer-div {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.3),
+    0 1rem 1.5rem -1px rgba(0, 0, 0, 0.18);
+}
+.pc-outer-div h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.chart-canvas {
+  margin: auto;
+}
+
+@media (max-width: 40rem) {
+  .ant-outer-div {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.1rem;
+    /* margin: auto;/ */
+  }
+  .ant-comments-div {
+    width: 100%;
+    border: 1px solid rgb(125, 124, 124);
+  }
+  .ant-rem-div{
+    width: 90%;
+  }
+  .kw-outer-div{
+    width: 100%;
+    overflow: scroll;
+    border: 1px solid rgb(125, 124, 124);
+  }
+  .sot-outer-div {
+    width: 100%;
+    border: 1px solid rgb(125, 124, 124);
+  }
+  .pc-outer-div{
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(125, 124, 124);
+  }
+}
+@media(min-width: 40rem) and (max-width:60rem){
+  .ant-outer-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ant-comments-div {
+    width: 80%;
+    margin: auto;
+  }
+  .ant-rem-div{
+    width: 80%;
+  }
+  .kw-outer-div{
+    width: 100%;
+    overflow: scroll;
+  }
+  .sot-outer-div {
+    width: 100%;
+  }
+  .pc-outer-div{
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width:60rem) and (max-width:75rem){
+  .kw-outer-div{
+    overflow: scroll;
+  }
+}
