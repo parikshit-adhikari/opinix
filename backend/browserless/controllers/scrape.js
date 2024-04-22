@@ -56,24 +56,6 @@ const scrape = async (req, res, next) => {
       dates: formattedDates,
     };
 
-    const csvContent = reviews
-      .map(
-        (review, index) =>
-          `"${review.replace(/"/g, '""')}",${formattedDates[index] || ""}`
-      )
-      .join("\n");
-
-    const filePath = path.join(__dirname, "..", "media", "reviews.csv");
-
-    const mediaDir = path.join(__dirname, "..", "media");
-    if (!fs.existsSync(mediaDir)) {
-      fs.mkdirSync(mediaDir, { recursive: true });
-    }
-
-    fs.writeFileSync(filePath, "reviewText,reviewTime\n" + csvContent, {
-      encoding: "utf8",
-    });
-
     res.json(response_data);
   } catch (error) {
     console.error(error.stack);
