@@ -15,6 +15,7 @@ The goal of this project is to create a platform through which companies can eas
 
 
 ## Demo
+https://github.com/parikshit-adhikari/opinix/assets/148355925/29edfc7a-c99d-4c7a-a149-773d8267c433
 
 
 
