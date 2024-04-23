@@ -48,7 +48,7 @@ You can install it by [here](https://git-lfs.com/)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rajendrakhanal/Opinix.git
+   git clone https://github.com/parikshit-adhikari/opinix.git
    ```
 
 2. Change directory to `Opinix`
