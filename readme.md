@@ -131,6 +131,23 @@ You can install it by [here](https://git-lfs.com/)
    ```bash
    npm start
    ```
+   Now, in the same directory (i.e. browserless) create a ```.env``` file and add the following:
+
+   ```bash
+   TOKEN = <your_token>
+   BROWSERLESS_PORT = 3000
+   ```
+   Then run the command to pull and run the docker image for browserless:
+
+   ```bash
+   docker run \
+     --rm \
+     -p 3000:3000 \
+     -e "CONCURRENT=10" \
+     -e "TOKEN=6R0W53R135510" \
+     ghcr.io/browserless/chromium
+   ```
+
 
 ## License
 
