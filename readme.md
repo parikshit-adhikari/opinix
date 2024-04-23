@@ -2,7 +2,7 @@
 
 #### About Project
 
-The project Opinix is an extensive effort aimed at tackling the growing problems related to e-commerce. Currently, this is the era of e-commerce, and most people prefer purchasing products online. There are thousands of reviews on each product and to go through each review and analyze the sentiment of every customer is a complicated task. Through the use of machine learning, web scraping (Browserless), and sentiment analysis (Bi-LSTM), the Opinix web application analyzes user evaluations and presents the opinions of a customer in a visually pleasing way.
+The project Opinix is an extensive effort aimed at tackling the growing problems related to e-commerce. Currently, this is the era of e-commerce, and most people prefer purchasing products online. There are thousands of reviews on each product and to go through each review and analyze the sentiment of every customer is a complicated task. Through the use of machine learning, web scraping, and sentiment analysis, the Opinix web application analyzes user evaluations and presents the opinions of a customer in a visually pleasing way.
 
 #### Project goal
 
@@ -22,13 +22,13 @@ https://github.com/parikshit-adhikari/opinix/assets/148355925/29edfc7a-c99d-4c7a
 
 ## Features
 
-- Web scraping using browserless
+- Web scraping using browserless and puppeteer
 - Highly efficient and accurate sentiments of individual reviews, sentiments over time, keywords and overall sentiments
 - Authentication and storage using firebase
 
 ## Technologies
 
-- Browserless
+- Browserless,Puppeteer
 - React, D3, Chart.js
 - Redux Toolkit
 - Django
@@ -122,15 +122,15 @@ You can install it by [here](https://git-lfs.com/)
 
 6. Navigate to browserless directory and run:
 
-```bash
-npm i
-```
+   ```bash
+   npm i
+   ```
 
-then:
+   then:
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 
 ## License
 
